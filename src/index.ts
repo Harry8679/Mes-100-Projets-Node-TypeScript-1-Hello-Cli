@@ -18,6 +18,18 @@
 //
 // Les arguments UTILISATEUR commencent à l'index 2.
 
-const prenom = process.argv[2]; // peut être undefined si rien n'est tapé
-const langue = process.argv[3]; // peut être undefined aussi
+// const prenom = process.argv[2]; // peut être undefined si rien n'est tapé
+// const langue = process.argv[3]; // peut être undefined aussi
 
+const prenom = process.argv[2];
+const langue = process.argv[3];
+
+let message : string;
+
+if (langue == "en") {
+    message = "Hello"
+} else if (langue == "en") {
+    message = "Hola"
+} else {
+    message == "Bonjour"
+}
