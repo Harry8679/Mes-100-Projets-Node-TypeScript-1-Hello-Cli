@@ -35,7 +35,7 @@ if (langue == "en") {
 }
 
 if (prenom !== undefined) {
-    console.log(`${message} ${prenom}`);
+  console.log(`${message}, ${prenom} !`);
 } else {
-    console.log(first)
+  console.log(`${message}, monde !`);
 }
