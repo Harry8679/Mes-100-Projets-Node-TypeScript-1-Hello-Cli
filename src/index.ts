@@ -31,5 +31,11 @@ if (langue == "en") {
 } else if (langue == "en") {
     message = "Hola"
 } else {
-    message == "Bonjour"
+    message = "Bonjour"
+}
+
+if (prenom !== undefined) {
+    console.log(`${message} ${prenom}`);
+} else {
+    console.log(first)
 }
