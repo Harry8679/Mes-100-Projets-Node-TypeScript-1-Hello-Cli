@@ -18,22 +18,21 @@
 //
 // Les arguments UTILISATEUR commencent à l'index 2.
 
-// const prenom = process.argv[2]; // peut être undefined si rien n'est tapé
-// const langue = process.argv[3]; // peut être undefined aussi
+const prenom = process.argv[2]; // peut être undefined si rien n'est tapé
+const langue = process.argv[3]; // peut être undefined aussi
 
-const prenom = process.argv[2];
-const langue = process.argv[3];
+// ── Choisir le message selon la langue ──────────────
+let message: string;
 
-let message : string;
-
-if (langue == "en") {
-    message = "Hello"
-} else if (langue == "en") {
-    message = "Hola"
+if (langue === "en") {
+  message = "Hello";
+} else if (langue === "es") {
+  message = "Hola";
 } else {
-    message = "Bonjour"
+  message = "Bonjour"; // français par défaut
 }
 
+// ── Afficher le résultat ─────────────────────────────
 if (prenom !== undefined) {
   console.log(`${message}, ${prenom} !`);
 } else {
