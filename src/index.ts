@@ -21,6 +21,8 @@
 const prenom = process.argv[2]; // peut être undefined si rien n'est tapé
 const langue = process.argv[3]; // peut être undefined aussi
 
+console.log(process.argv);
+
 // ── Choisir le message selon la langue ──────────────
 let message: string;
 
